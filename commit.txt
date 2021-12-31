@@ -1,3 +1,14 @@
 git add . 하면 수정된 부분 올라가고
 git commit -m "무슨 수정사항인지 쓰고"
 git push origin master 까지 써주면 local repository에 있던 거 온라인으로? 올라감 
+
+cheonhyesu@hyesu22 2022 % git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+이렇게 뜨면 git remote -v 해보고 
+아무것도 안 뜨면
+Git remote add origin "그 깃 저장소 url"
+하고 나서 
+Git push origin master 다시 하기 
+토큰이랑 입력해야 됨
